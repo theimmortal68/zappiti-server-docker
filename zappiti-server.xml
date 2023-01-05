@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>zappiti-server</Name>
+  <Repository>theimmortal/zappiti-server</Repository>
+  <Registry>https://hub.docker.com/r/theimmortal/zappiti-server</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/theimmortal68/zappiti-server-docker</Support>
+  <Project>https://github.com/theimmortal68/zappiti-server-docker</Project>
+  <Overview>Docker container to install and run Zappiti Server app as local Cloud using your PC, Unraid, or custom NAS solution. Your files used for the collection are saved only on your machine.</Overview>
+  <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <WebUI>http://[IP]:[PORT:8777]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/theimmortal/zappiti-server-docker/master/templates/zappiti-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/theimmortal/zappiti-server-docker/master/templates/zappiti-server.png</Icon>
+  <ExtraParams>--hostname=zappiti-server --restart=unless-stopped</ExtraParams>
+  <Config Name="WebUI Port" Target="8777" Default="8777" Mode="tcp" Description="Container Port: 8777" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Autodiscovery Port" Target="8777" Default="8777" Mode="udp" Description="Container Port: 8777" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Application Data" Target="/app/bin" Default="/mnt/user/appdata/zappiti/bin" Mode="rw,slave" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="User Data" Target="/app/data" Default="/mnt/user/appdata/zappiti/data" Mode="rw,slave" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+</Container>
