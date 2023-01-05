@@ -7,7 +7,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/133307-support-zappiti-server/</Support>
   <Project>https://github.com/theimmortal68/zappiti-server-docker</Project>
-  <Overview>Docker container to install and run Zappiti Server app as local Cloud using your PC, Unraid, or custom NAS solution. Your files used for the collection are saved only on your machine.</Overview>
+  <Overview>Docker container to install and run Zappiti Server app as a local Cloud to manage your library using your Unraid server. Your files used for the collection are saved only on your machine.</Overview>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:8777]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/theimmortal/zappiti-server-docker/master/templates/zappiti-server.xml</TemplateURL>
