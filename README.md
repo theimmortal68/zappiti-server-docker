@@ -10,8 +10,6 @@ Docker container to install and run Zappiti Server app as local Cloud using your
 
 Warning! Some technical info can be proposed by default on ISO files.
 
-Warning! The export function on Zappiti Cloud is currently non-functional. The Zappiti developers are working on a solution. Until it is fixed, there is no way to transfer collections from the cloud to your local server. You will have to create new collections on the local server.
-
 ## Usage
 
 Here is an example snippet to help you get started creating a container.
