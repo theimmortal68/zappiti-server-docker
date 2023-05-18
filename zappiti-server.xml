@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="2">
+<Container version="2.0.1">
   <Name>zappiti-server</Name>
   <Repository>theimmortal/zappiti-server</Repository>
   <Registry>https://hub.docker.com/r/theimmortal/zappiti-server</Registry>
@@ -11,7 +11,7 @@
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:8777]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/theimmortal/zappiti-server-docker/master/templates/zappiti-server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/theimmortal/zappiti-server-docker/master/templates/zappiti-server.png</Icon>
+  <Icon>https://raw.githubusercontent.com/theimmortal68/zappiti-server-docker/main/zappiti-server.png</Icon>
   <ExtraParams>--hostname=zappiti-server --restart=unless-stopped</ExtraParams>
   <Config Name="WebUI Port" Target="8777" Default="8777" Mode="tcp" Description="Container Port: 8777" Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="Autodiscovery Port" Target="8777" Default="8777" Mode="udp" Description="Container Port: 8777" Type="Port" Display="always" Required="true" Mask="false"/>
